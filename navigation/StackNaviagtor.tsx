@@ -16,13 +16,7 @@ const StackNaviagtior = () => {
 
     const BottomTab = () => {
       return (
-        <Tab.Navigator screenOptions={{
-          tabBarLabelStyle:{
-            backgroundColor:'transparent',
-            elevation:0,
-            borderTopWidth:0
-          }
-        }}>
+        <Tab.Navigator>
           <Tab.Screen name='Dashboard' component={DashboardScreen} options={{tabBarLabel:"Home", tabBarLabelStyle:{color:"#008e97"},headerShown:false,tabBarIcon:({focused})=> focused ? (
              <MaterialCommunityIcons name="home" size={24} color="blue"  />
 

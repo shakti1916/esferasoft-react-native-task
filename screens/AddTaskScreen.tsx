@@ -39,12 +39,16 @@ const AddTaskScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <View >
           <View style={styles.profileContainer}>
+          <View>
             <Text style={styles.nameSignatureAndTitle}>
-              Good Morining,{"\n"} Esfreasoft Team
+              Good Morning,
             </Text>
+            <Text style={styles.nameSignatureAndTitle}>
+            Esfreasoft Team
+
+            </Text>
+            </View>
             <View style={styles.profileImage}>
               <MaterialCommunityIcons name="account" size={30} color="gray" />
             </View>
@@ -67,8 +71,6 @@ const AddTaskScreen = () => {
           </TouchableOpacity>
 
           
-        </View>
-      </ScrollView>
     </SafeAreaView>
   )
 }
@@ -122,14 +124,14 @@ const styles = StyleSheet.create({
     inputField:{
         backgroundColor: "#fff",
         borderRadius: 3,
-        marginHorizontal: 7,
         padding: 5,
         marginTop: 20,
 
     },
     AddBtn:{
         backgroundColor:"orange",
-        // padding:5,
+        padding:5,
+        // flex:1,
         marginVertical:30,
         borderRadius:5
     },
